@@ -28,6 +28,12 @@ Fetch API: The extension communicates with the backend using the Fetch API to se
 Conclusion:
 The purpose of this project is to provide a tool that helps users understand their digital habits by tracking the time they spend on different websites and categorizing their activities as productive or unproductive. By offering a real-time productivity report and an aggregated weekly summary, the Chrome extension allows users to improve their online behavior, reduce time spent on unproductive sites, and increase their overall efficiency. With the integration of a backend server and MongoDB database, the extension offers a powerful, scalable solution for time tracking and productivity analytics.
 
+#OUTPUT
+
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/42522f44-5b05-43ab-8423-01a0c0c6afd4" />
+
+
+
 
 
 
