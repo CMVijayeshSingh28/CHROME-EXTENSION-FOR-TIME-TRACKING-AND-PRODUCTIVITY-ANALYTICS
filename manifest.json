@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Time Tracker and Productivity Analytics",
+  "description": "Track your time on websites and get productivity reports.",
+  "version": "1.0",
+  "permissions": [
+    "tabs",  // Needed to access tab information
+    "storage",  // Needed to store user data locally
+    "webNavigation",  // Needed to track navigation on web pages
+    "activeTab"  // Needed to interact with the current tab
+  ],
+  "background": {
+    "service_worker": "background.js"  // Background script to track time
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],  // Matches all websites
+      "js": ["content.js"]  // Script that interacts with web pages
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",  // Popup that shows the time tracker and productivity report
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "options_page": "options.html"  // Options page to configure settings
+}
